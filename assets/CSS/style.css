@@ -9,12 +9,11 @@ body {
     font-family: 'Bricolage Grotesque', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     min-height: 100vh;
-    width: 100vw;
     display: flex;
     flex-direction: column;
 }
 
-main { /* Credit: guided by Claude to centre containers properly*/
+main { /* Credit: assisted  by Claude to centre containers properly */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -57,7 +56,7 @@ dialog p, dialog ol {
     margin: 8px auto;
 }
 
-/* GAME CONTAINER --- credit: https://github.com/Allwrightben/starquiz/blob/main/assets/css/style.css */
+/* GAME CONTAINER --- used as a guide: https://github.com/Allwrightben/starquiz/blob/main/assets/css/style.css */
 
 .container {
     width: 90%;
@@ -120,11 +119,9 @@ dialog p, dialog ol {
 
 .controls button {
     margin-top: 24px;
-    align-items: center;
-    justify-content: space-between;
 }
 
-/*SCORES*/
+/* SCORES */
 
 .score-container {
     color:#f2eef2;
@@ -134,18 +131,17 @@ dialog p, dialog ol {
     justify-content: space-between;
 }
 
-/*QUESTIONS*/
+/* QUESTIONS */
 
 #question {
     color:#f2eef2;
     text-align: center;
 }
 
-/*ANSWER GRID*/
+/* ANSWER GRID --- used as a guide: https://github.com/Allwrightben/starquiz/blob/main/assets/css/style.css */
 
 .answers-grid {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
@@ -154,23 +150,23 @@ dialog p, dialog ol {
 /* FOOTER */
 
 footer {
-    margin-top: auto;
+    top: 0;
     position: sticky;
     text-align: center;
     font-size: 12px;
-    padding-top: 40px;
 }
 
-/*.hide {
-    display: none;
-}*/
+/* HIDE */
 
-/* Resizing (landscape tablets, 768px and up) - credit to: https://www.w3schools.com/css/css_rwd_mediaqueries.asp and https://www.youtube.com/watch?v=K24lUqcT0Ms */
+.hide {
+    display: none;
+}
+
+/* Resizing - credit to: https://www.w3schools.com/css/css_rwd_mediaqueries.asp and https://www.youtube.com/watch?v=K24lUqcT0Ms */
 
 @media (max-width: 640px) {
     .container {
-        width: 90%;
-        margin: 0 auto;
+        width: 80%;
         font-size: 1em;
     }
 
@@ -182,14 +178,9 @@ footer {
 @media (max-width: 580px) {
     #my-dialog {
         width: 90%;
-        margin: 0 auto;
     }
 
-    #my-dialog p, li {
-        font-size: 0.8em;
-    }
-
-    #closedialog {
+    #closedialog, #my-dialog p, #my-dialog li {
         font-size: 0.8em;
     }
 }
