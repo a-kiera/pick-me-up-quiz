@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <META charset="UTF-8">
+        <META name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- style sheets -->
+        <link href="./assets/CSS/style.css" rel="stylesheet">
+        <title>Hey, Diva!</title>
+    </head>
+
+    <body>
+        <main>
+            <!-- Rules button -->
+            <button command="show-modal" commandfor="my-dialog" class="rulesbtn">Rules</button> <!-- Credit to tutorial: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog -->
+
+            <dialog id="my-dialog">
+                <p>How to play</p>
+
+                <ol>
+                    <li>Hit <i>Let's go, diva.</i></li>
+                    <li>Pick the answer that is kindest to you. Correct = a point, anything else = Incorrect <i>(with a sassy correction).</i></li>
+                    <li>Answer all 8 questions and see your result.</li>
+                </ol>
+                    
+                <p>The only rule: <strong>be nice to yourself.</strong></p>
+                <button commandfor="my-dialog" command="close" class="closedialog">Close</button>
+            </dialog>
+
+            <!-- game container -->
+            <section class="container">
+                <!-- start screen -->
+                <div class="start-game">
+                    <h1>The Pick-Me-Up Quiz</h1>
+                    <p>Eight questions about how you’re feeling. Pick the answer that’s kind to you, because every other answer is incorrect and we <strong>will</strong> say so.</p>
+
+                    <button type="button" id="startbtn"><i>Let's go, Diva</i></button>
+                </div>
+
+                <!-- quiz button controls: back, reset, next -->
+                <div class="controls hide">
+                    <button type="button" id="backbtn">Back</button>
+                    <button type="button" id="resetbtn">Reset</button>
+                    <button type="button" id="nextbtn">Next</button>
+                </div>
+
+                <div class="quiz hide">
+                    <h2 id="question">Question goes here</h2>
+                    <div id="answers" class="answers grid">
+                        <button type="button" class="answerbtns">Answer 1</button>
+                        <button type="button" class="answerbtns">Answer 2</button>
+                        <button type="button" class="answerbtns">Answer 3</button>
+                        <button type="button" class="answerbtns">Answer 4</button>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+
+        <footer>Designed by a-kiera &copy; 2026</footer>
+
+        <!-- Javascript link -->
+        <script src="./assets/Scripts/script.js" defer></script>
+    </body>
+</html>

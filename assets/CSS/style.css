@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f495b5;
+    font-family: 'Bricolage Grotesque', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main { /* Claude-assisted for centering containers properly*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+/* RULES BUTTON */
+
+.rulesbtn, .closedialog {
+    background-color: #93abd9;
+    color: #ede986;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #829ccb;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+dialog {
+    background-color: #ede986;
+    color: #93abd9;
+    text-align: justify;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+dialog p, dialog ol {
+    line-height: 1.8;
+}
+
+.closedialog {
+    padding: 8px;
+    margin: 8px auto;
+}
+
+/* GAME CONTAINER --- credit: https://github.com/Allwrightben/starquiz/blob/main/assets/css/style.css */
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 50px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; /* credit to: https://getcssscan.com/css-box-shadow-examples */
+    background-color: #829ccb;
+    padding: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+/* START GAME */
+
+.start-game h1, .start-game p {
+    color: #ede986;
+}
+
+.start-game h1 {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+#startbtn {
+    background-color: #e7bef8;
+    color: #f2619c;
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+    position: sticky;
+    text-align: center;
+    font-size: 1em;
+}
+
+.hide {
+    display: none;
+}
