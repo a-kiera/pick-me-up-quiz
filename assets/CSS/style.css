@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #f7f495b5;
+    background-color: #f2eef2;
     font-family: 'Bricolage Grotesque', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     min-height: 100vh;
@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-main { /* Claude-assisted for centering containers properly*/
+main { /* Credit: guided by Claude to centre containers properly*/
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -29,21 +29,22 @@ button {
 
 /* RULES BUTTON */
 
-.rulesbtn, .closedialog {
-    background-color: #93abd9;
-    color: #ede986;
+#rulesbtn, #closedialog {
+    background-color: rgb(225, 16, 149);
+    color: #f2eef2;
     text-align: center;
-    font-size: 24px;
-    border: 2px solid #829ccb;
+    font-size: 1.5em;
+    border: none;
+    margin-top: 10px;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
 }
 
 dialog {
-    background-color: #ede986;
-    color: #93abd9;
+    background-color: #6994dc;
+    color: #f2eef2;
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.3em;
     border-radius: 50px;
 }
 
@@ -63,7 +64,7 @@ dialog p, dialog ol {
     max-width: 600px;
     border-radius: 50px;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; /* credit to: https://getcssscan.com/css-box-shadow-examples */
-    background-color: #93abd9;
+    background-color: #6994dc;
     padding: 30px;
     text-align: center;
     font-weight: 600;
@@ -73,7 +74,7 @@ dialog p, dialog ol {
 /* START GAME */
 
 .start-game h1, .start-game p {
-    color: #ede986;
+    color: #f2eef2;
 }
 
 .start-game h1 {
@@ -82,11 +83,11 @@ dialog p, dialog ol {
 }
 
 #startbtn {
-    background-color: #e7bef8;
-    color: #f2619c;
+    background-color: #f2eef2;
+    color: rgb(225, 16, 149);
     font-weight: 700;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.8em;
     border-radius: 10px 10px 10px 10px;
     border: none;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px;
@@ -94,23 +95,61 @@ dialog p, dialog ol {
     padding: 8px;
 }
 
-/* CONTROL BUTTONS */
+/* ANSWERS & CONTROL BUTTONS */
 
-.controls button {
-    background-color: #93abd9;
-    color: #ede986;
+.answerbtns {
+    background-color: #f2eef2;
+    color: #6994dc;
     text-align: center;
-    font-size: 24px;
-    border: 2px solid #829ccb;
+    font-size: 1.5em;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #f2eef2;
+    font-size: 1em;
+    color:rgb(225, 16, 149);
+    border: none;
     border-radius: 10px 10px 10px 10px;
     cursor: pointer;
+}
+
+.controls button {
+    margin-top: 24px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*SCORES*/
+
+.score-container {
+    color:#f2eef2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*QUESTIONS*/
 
 #question {
-
+    color:#f2eef2;
+    text-align: center;
 }
+
+/*ANSWER GRID*/
+
+.answers-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
 
 /* FOOTER */
 
@@ -118,9 +157,39 @@ footer {
     margin-top: auto;
     position: sticky;
     text-align: center;
-    font-size: 1em;
+    font-size: 12px;
+    padding-top: 40px;
 }
 
 /*.hide {
     display: none;
 }*/
+
+/* Resizing (landscape tablets, 768px and up) - credit to: https://www.w3schools.com/css/css_rwd_mediaqueries.asp and https://www.youtube.com/watch?v=K24lUqcT0Ms */
+
+@media (max-width: 640px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+
+    .answerbtns {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 580px) {
+    #my-dialog {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #my-dialog p, li {
+        font-size: 0.8em;
+    }
+
+    #closedialog {
+        font-size: 0.8em;
+    }
+}

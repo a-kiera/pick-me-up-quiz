@@ -1,3 +1,7 @@
+const startButton = document.getElementbyId('startbtn');
+const 
+
+
 /* 1. It’s 7am on a Monday. How are you feeling about yourself?
 
 ✅ Like a whole snack, honestly.

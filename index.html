@@ -11,7 +11,7 @@
     <body>
         <main>
             <!-- Rules button -->
-            <button command="show-modal" commandfor="my-dialog" class="rulesbtn">Rules</button> <!-- Credit to tutorial: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog -->
+            <button command="show-modal" commandfor="my-dialog" id="rulesbtn">Rules</button> <!-- Credit to tutorial: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog -->
 
             <dialog id="my-dialog">
                 <p><b>How to play</b></p>
@@ -23,7 +23,8 @@
                 </ol>
                     
                 <p>The only rule: <strong>be nice to yourself.</strong></p>
-                <button commandfor="my-dialog" command="close" class="closedialog">Close</button>
+
+                <button commandfor="my-dialog" command="close" id="closedialog">Close</button>
             </dialog>
 
             <!-- game container -->
@@ -31,18 +32,19 @@
                 <!-- start screen -->
                 <div class="start-game">
                     <h1>The Pick-Me-Up Quiz</h1>
-                    <p>Eight questions about how you’re feeling. Pick the answer that’s kind to you, because every other answer is incorrect and we <strong>will</strong> say so.</p>
+                    <p>Eight questions about how you’re feeling. Pick the answer that’s kind to you, because every other answer is incorrect and we <u>will</u> say so.</p>
 
                     <button type="button" id="startbtn"><i>Let's go, Diva</i></button>
                 </div>
 
+                <!-- quiz, question & answers -->
                 <div class="quiz hide">
                     <h2 id="question">Question goes here</h2>
-                    <div id="answers" class="answers grid">
-                        <button type="button" class="btn answerbtns">Answer 1</button>
-                        <button type="button" class="btn answerbtns">Answer 2</button>
-                        <button type="button" class="btn answerbtns">Answer 3</button>
-                        <button type="button" class="btn answerbtns">Answer 4</button>
+                    <div id="answers" class="answers-grid">
+                        <button type="button" class="answerbtns">Answer 1</button>
+                        <button type="button" class="answerbtns">Answer 2</button>
+                        <button type="button" class="answerbtns">Answer 3</button>
+                        <button type="button" class="answerbtns">Answer 4</button>
                     </div>
                     
                     <!-- quiz button controls: back, reset, next -->
@@ -52,6 +54,11 @@
                     <button type="button" class="btn" id="nextbtn">Next</button>
                     </div>
 
+                    <div class="score-container">
+                        <p id="score">0</p>
+                        <div id="count-questions">0/10</div>
+                    </div>
+
                 </div>
             </section>
         </main>
@@ -59,6 +66,6 @@
         <footer>Designed by a-kiera &copy; 2026</footer>
 
         <!-- Javascript link -->
-        <script src="./assets/Scripts/script.js" defer></script>
+        <script src="./assets/Scripts/script.js"></script>
     </body>
 </html>
