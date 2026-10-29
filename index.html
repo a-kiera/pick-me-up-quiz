@@ -14,7 +14,7 @@
             <button command="show-modal" commandfor="my-dialog" class="rulesbtn">Rules</button> <!-- Credit to tutorial: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog -->
 
             <dialog id="my-dialog">
-                <p>How to play</p>
+                <p><b>How to play</b></p>
 
                 <ol>
                     <li>Hit <i>Let's go, diva.</i></li>
@@ -36,13 +36,6 @@
                     <button type="button" id="startbtn"><i>Let's go, Diva</i></button>
                 </div>
 
-                <!-- quiz button controls: back, reset, next -->
-                <div class="controls hide">
-                    <button type="button" id="backbtn">Back</button>
-                    <button type="button" id="resetbtn">Reset</button>
-                    <button type="button" id="nextbtn">Next</button>
-                </div>
-
                 <div class="quiz hide">
                     <h2 id="question">Question goes here</h2>
                     <div id="answers" class="answers grid">
@@ -50,6 +43,13 @@
                         <button type="button" class="answerbtns">Answer 2</button>
                         <button type="button" class="answerbtns">Answer 3</button>
                         <button type="button" class="answerbtns">Answer 4</button>
+                    </div>
+                    
+                    <!-- quiz button controls: back, reset, next -->
+                    <div class="controls hide">
+                    <button type="button" id="backbtn">Back</button>
+                    <button type="button" id="resetbtn">Reset</button>
+                    <button type="button" id="nextbtn">Next</button>
                     </div>
 
                 </div>

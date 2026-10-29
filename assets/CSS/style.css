@@ -63,7 +63,7 @@ dialog p, dialog ol {
     max-width: 600px;
     border-radius: 50px;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px; /* credit to: https://getcssscan.com/css-box-shadow-examples */
-    background-color: #829ccb;
+    background-color: #93abd9;
     padding: 30px;
     text-align: center;
     font-weight: 600;
@@ -94,6 +94,24 @@ dialog p, dialog ol {
     padding: 8px;
 }
 
+/* CONTROL BUTTONS */
+
+.controls button {
+    background-color: #93abd9;
+    color: #ede986;
+    text-align: center;
+    font-size: 24px;
+    border: 2px solid #829ccb;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+/*QUESTIONS*/
+
+#question {
+
+}
+
 /* FOOTER */
 
 footer {
@@ -103,6 +121,6 @@ footer {
     font-size: 1em;
 }
 
-.hide {
+/*.hide {
     display: none;
-}
+}*/
