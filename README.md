@@ -32,7 +32,7 @@ The Pick-Me-Up Quiz can be used by all users although the target audience is pri
 
 
 ![validate-css](https://github.com/a-kiera/pick-me-up-quiz/blob/main/assets/Documentation/validate-css.png)
-![validate-html]https://github.com/a-kiera/pick-me-up-quiz/blob/main/assets/Documentation/validate-html.png()
+![validate-html](https://github.com/a-kiera/pick-me-up-quiz/blob/main/assets/Documentation/validate-html.png)
 
 *I encountered an error that prevented the initial javascript commit from working, in which I used .`getElementsByClassName` for the variable `quizContainer` and the console error came up null. This was resolved by choosing `.querySelector` instead.
 
