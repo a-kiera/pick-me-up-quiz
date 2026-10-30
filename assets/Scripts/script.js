@@ -11,6 +11,7 @@ const nextButton = document.getElementById('nextbtn');
 let totalQuestions;
 let score = 0;
 let randomOrder, currentQuestion;
+document.get
 
 // start button event listener
 startButton.addEventListener('click', startGame);
@@ -50,7 +51,7 @@ function startGame() {
 // display question
 
 function showQuestion(questions) {
-    
+
 }
 
 // answer selection
