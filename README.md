@@ -1,4 +1,4 @@
-# Project Title: Pick-Me-Up Quiz #
+# Project Title: Pick-Me-Up Quiz :love_letter: #
 # Welcome #
 The Pick-Me-Up quiz is live and perfect for those of us who need a little extra lovin' every once in a while.
 
@@ -14,6 +14,8 @@ Creative liberty was given as to the subject matter and so I thought why not mak
 The Pick-Me-Up Quiz can be used by all users, although the target audience is primarily gen z social media users. As such, the site is designed with a colourful palette and ironic answers/responses.
 
 # Features #
+
+# Future Improvements #
 
 
 # Technologies #
@@ -36,9 +38,6 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
 The live link can be found [here]
 
 # Contact #
-Kie
-[amykiera.m@gmail.com]
-
 Let me know if you have any feedback or suggestions.
 Thank you for visiting the [Pick-Me-Up Quiz] diva!!! 
 
