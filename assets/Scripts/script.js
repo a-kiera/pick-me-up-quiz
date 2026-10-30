@@ -1,10 +1,10 @@
 const rulesButton = document.getElementById('rulesbtn');
 const startButton = document.getElementById('startbtn');
-const startScreen = document.getElementsByClassName('start game');
+const startScreen = document.querySelector('.start-game');
 const answerButtonsDiv = document.getElementById('answers');
-const quizContainer = document.getElementsByClassName('quiz hide');
+const quizContainer = document.querySelector('.quiz');
 const question = document.getElementById('question');
-const controls = document.getElementsByClassName('controls');
+const controls = document.querySelector('.controls');
 const backButton = document.getElementById('backbtn');
 const resetButton = document.getElementById('resetbtn');
 const nextButton = document.getElementById('nextbtn');
@@ -17,11 +17,7 @@ startButton.addEventListener('click', startGame);
 
 // control btns event listeners
 backButton.addEventListener('click', () => {
-    if (currentQuestion === 0) {
-        backButton.style.display = none;
-    } else {
-        currentQuestion--;
-    }
+    currentQuestion--;
 });
 
 nextButton.addEventListener('click', () => {
@@ -29,26 +25,30 @@ nextButton.addEventListener('click', () => {
 });
 
 resetButton.addEventListener('click', () => {
-    quizContainer.style.display = none;
+    quizContainer.style.display = 'none';
 });
 
 // start the game 
 
 function startGame() {
     score = 0;
-    document.getElementById('score').innerText = 'Score: ' + score;
-
+    currentQuestion = 1;
     totalQuestions = 8;
+
+    document.getElementById('score').innerText = 'Score: ' + score;
     document.getElementById('count-questions').innerText = 'Questions left' + totalQuestions;
     
-    startScreen.classList.remove('start game');
+    startScreen.classList.add('hide');
 
-    quizContainer.classList.add('quiz hide');
+    quizContainer.classList.remove('hide');
 
-    currentQuestion = 1;
-
+    controls.classList.remove('hide');
 
 };
+
+function showQuestion() {
+    
+}
 
 
 
