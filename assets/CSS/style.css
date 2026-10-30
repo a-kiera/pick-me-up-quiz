@@ -94,6 +94,11 @@ dialog p, dialog ol {
     padding: 8px;
 }
 
+#startbtn:hover {
+    background-color: rgb(225, 16, 149);
+    color: #f2eef2;
+}
+
 /* ANSWERS & CONTROL BUTTONS */
 
 .answerbtns {

@@ -36,7 +36,7 @@ function startGame() {
     totalQuestions = 8;
 
     document.getElementById('score').innerText = 'Score: ' + score;
-    document.getElementById('count-questions').innerText = 'Questions left' + totalQuestions;
+    document.getElementById('count-questions').innerText = 'Questions left: ' + totalQuestions;
     
     startScreen.classList.add('hide');
 
@@ -44,17 +44,23 @@ function startGame() {
 
     controls.classList.remove('hide');
 
+    showQuestion();
 };
 
-function showQuestion() {
+// display question
+
+function showQuestion(questions) {
     
 }
 
+// answer selection
 
 
+// reset game
 
-
-
+function resetGame() {
+    
+}
 
 let questions = [{
     question: 'It’s 7am on a Monday. How are you feeling about yourself?',

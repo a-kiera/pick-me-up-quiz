@@ -11,7 +11,7 @@ This site is the third project for my course with Learning People UK, where I wa
 
 Creative liberty was given as to the subject matter and so I thought why not make a different sort of quiz, one that has the purpose of providing users with a positive morale boost (instead of simply asking who the 17th president of the United States is). 
 
-The Pick-Me-Up Quiz can be used by all users, although the target audience is primarily gen z social media users. As such, the site is designed with a colourful palette and ironic answers/responses.
+The Pick-Me-Up Quiz can be used by all users, although the target audience is primarily gen z social media users. As such, the site is designed with a colourful palette and an ironic tone.
 
 # Features #
 
